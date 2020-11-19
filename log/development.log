@@ -1,0 +1,724 @@
+  [1m[35m (849.3ms)[0m  [1m[35mCREATE DATABASE "training_log_app_backend_development" ENCODING = 'unicode'[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (296.9ms)[0m  [1m[35mCREATE DATABASE "training_log_app_backend_test" ENCODING = 'unicode'[0m
+  ↳ config/boot.rb:4:in `load'
+Started GET "/" for ::1 at 2020-11-19 11:26:31 -0500
+  [1m[35m (114.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (14.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20201119161157_create_workouts.rb
+
+
+):
+  
+activerecord (6.1.0.rc1) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.0.rc1) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.0.rc1) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.0.rc1) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.0.rc1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.0.rc1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.0.rc1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.0.rc1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.0.rc1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.0.rc1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.0.rc1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+railties (6.1.0.rc1) lib/rails/engine.rb:535:in `call'
+puma (5.0.4) lib/puma/configuration.rb:239:in `call'
+puma (5.0.4) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.0.4) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.0.4) lib/puma/request.rb:75:in `handle_request'
+puma (5.0.4) lib/puma/server.rb:430:in `process_client'
+puma (5.0.4) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/favicon.ico" for ::1 at 2020-11-19 11:26:32 -0500
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35mCACHE  (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 1 pending migration:
+
+20201119161157_create_workouts.rb
+
+
+):
+  
+activerecord (6.1.0.rc1) lib/active_record/migration.rb:625:in `check_pending!'
+activerecord (6.1.0.rc1) lib/active_record/migration.rb:590:in `block (2 levels) in call'
+activesupport (6.1.0.rc1) lib/active_support/evented_file_update_checker.rb:59:in `execute'
+activerecord (6.1.0.rc1) lib/active_record/migration.rb:595:in `block in call'
+activerecord (6.1.0.rc1) lib/active_record/migration.rb:587:in `synchronize'
+activerecord (6.1.0.rc1) lib/active_record/migration.rb:587:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.0.rc1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.0.rc1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.0.rc1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.0.rc1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.0.rc1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+railties (6.1.0.rc1) lib/rails/engine.rb:535:in `call'
+puma (5.0.4) lib/puma/configuration.rb:239:in `call'
+puma (5.0.4) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.0.4) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.0.4) lib/puma/request.rb:75:in `handle_request'
+puma (5.0.4) lib/puma/server.rb:430:in `process_client'
+puma (5.0.4) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6406944681107922840)[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+Migrating to CreateWorkouts (20201119161157)
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (42.9ms)[0m  [1m[35mCREATE TABLE "workouts" ("id" bigserial primary key, "date" date, "title" character varying, "time" float, "sport" character varying, "description" text, "distance" float, "exertion" integer, "url" character varying, "isFavorite" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mActiveRecord::SchemaMigration Create (20.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201119161157"]]
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ config/boot.rb:4:in `load'
+Migrating to CreateUsers (20201119163927)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (7.6ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201119163927"]]
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mActiveRecord::InternalMetadata Load (1.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mActiveRecord::InternalMetadata Create (2.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2020-11-19 16:45:15.071729"], ["updated_at", "2020-11-19 16:45:15.071729"]]
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(6406944681107922840)[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mUser Create (2.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "test"], ["password_digest", "$2a$12$Ebw9/pAFO0ERQEsMrY5UDefwh5qiIzL9GLeEKxetFk1nWh10p1fVq"], ["created_at", "2020-11-19 16:49:20.301394"], ["updated_at", "2020-11-19 16:49:20.301394"]]
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2020-11-19 12:04:44 -0500
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering vendor/bundle/ruby/2.7.0/gems/railties-6.1.0.rc1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered vendor/bundle/ruby/2.7.0/gems/railties-6.1.0.rc1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.2ms | Allocations: 346)
+Completed 200 OK in 28ms (Views: 16.9ms | ActiveRecord: 0.0ms | Allocations: 2705)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-11-19 12:04:44 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6406944681107922840)[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+Migrating to AddUserIdToWorkouts (20201119171401)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (31.3ms)[0m  [1m[35mALTER TABLE "workouts" ADD "user_id" integer[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201119171401"]]
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(6406944681107922840)[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+Started POST "/login" for ::1 at 2020-11-19 12:30:02 -0500
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "user"=>{"username"=>"test"}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 200 OK in 357ms (Views: 0.5ms | ActiveRecord: 40.3ms | Allocations: 7030)
+
+
+Started GET "/workouts" for ::1 at 2020-11-19 12:32:09 -0500
+Processing by WorkoutsController#index as */*
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:28:in `logged_in_user'
+  [1m[36mWorkout Load (2.2ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/workouts_controller.rb:9:in `index'
+Completed 200 OK in 59ms (Views: 2.8ms | ActiveRecord: 19.4ms | Allocations: 3200)
+
+
+Started POST "/workouts" for ::1 at 2020-11-19 12:38:21 -0500
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    "title": "Workout 1",
+    "description": "testing out the description",
+    "time": 1.5,
+    "sport": "run",
+    "distance": 2.0,
+    "exertion": 5,
+    "date": 2020-11-19,
+    "url": "https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s",
+    "isFavorite": false
+}
+  
+ActionDispatch::Http::Parameters::ParseError (783: unexpected token at '{
+    "title": "Workout 1",
+    "description": "testing out the description",
+    "time": 1.5,
+    "sport": "run",
+    "distance": 2.0,
+    "exertion": 5,
+    "date": 2020-11-19,
+    "url": "https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s",
+    "isFavorite": false
+}'):
+  
+actionpack (6.1.0.rc1) lib/action_dispatch/http/parameters.rb:96:in `rescue in parse_formatted_parameters'
+actionpack (6.1.0.rc1) lib/action_dispatch/http/parameters.rb:92:in `parse_formatted_parameters'
+actionpack (6.1.0.rc1) lib/action_dispatch/http/request.rb:399:in `block in POST'
+rack (2.2.3) lib/rack/request.rb:69:in `fetch'
+rack (2.2.3) lib/rack/request.rb:69:in `fetch_header'
+actionpack (6.1.0.rc1) lib/action_dispatch/http/request.rb:398:in `POST'
+actionpack (6.1.0.rc1) lib/action_dispatch/http/parameters.rb:55:in `parameters'
+actionpack (6.1.0.rc1) lib/action_controller/metal/params_wrapper.rb:284:in `_wrapper_enabled?'
+actionpack (6.1.0.rc1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (6.1.0.rc1) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.0.rc1) lib/abstract_controller/base.rb:165:in `process'
+actionpack (6.1.0.rc1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.0.rc1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.0.rc1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.0.rc1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.0.rc1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.0.rc1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.0.rc1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.0.rc1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.0.rc1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.0.rc1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.0.rc1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.0.rc1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.0.rc1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.0.rc1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.0.rc1) lib/rails/engine.rb:535:in `call'
+puma (5.0.4) lib/puma/configuration.rb:239:in `call'
+puma (5.0.4) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.0.4) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.0.4) lib/puma/request.rb:75:in `handle_request'
+puma (5.0.4) lib/puma/server.rb:430:in `process_client'
+puma (5.0.4) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    "title": "Workout 1",
+    "description": "testing out the description",
+    "time": 1.5,
+    "sport": "run",
+    "distance": 2.0,
+    "exertion": 5,
+    "date": 2020-11-19,
+    "url": "https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s",
+    "isFavorite": false
+}
+Started POST "/workouts" for ::1 at 2020-11-19 12:40:01 -0500
+Processing by WorkoutsController#create as */*
+  Parameters: {"title"=>"Workout 1", "description"=>"testing out the description", "time"=>1.5, "sport"=>"run", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false, "workout"=>{"title"=>"Workout 1", "time"=>1.5, "sport"=>"run", "description"=>"testing out the description", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:28:in `logged_in_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (19.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mWorkout Create (4.7ms)[0m  [1m[32mINSERT INTO "workouts" ("title", "time", "sport", "description", "distance", "exertion", "url", "isFavorite", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Workout 1"], ["time", 1.5], ["sport", "run"], ["description", "testing out the description"], ["distance", 2.0], ["exertion", 5], ["url", "https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s"], ["isFavorite", false], ["created_at", "2020-11-19 17:40:02.160234"], ["updated_at", "2020-11-19 17:40:02.160234"], ["user_id", 1]]
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+Completed 201 Created in 94ms (Views: 0.8ms | ActiveRecord: 75.1ms | Allocations: 10560)
+
+
+Started PUT "/workouts" for ::1 at 2020-11-19 12:40:27 -0500
+  
+ActionController::RoutingError (No route matches [PUT] "/workouts"):
+  
+Started PUT "/workouts/" for ::1 at 2020-11-19 12:40:49 -0500
+  
+ActionController::RoutingError (No route matches [PUT] "/workouts"):
+  
+Started POST "/workouts/" for ::1 at 2020-11-19 12:41:17 -0500
+Processing by WorkoutsController#create as */*
+  Parameters: {"title"=>"Workout 2", "description"=>"testing out the description", "time"=>1.5, "sport"=>"run", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false, "workout"=>{"title"=>"Workout 2", "time"=>1.5, "sport"=>"run", "description"=>"testing out the description", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:28:in `logged_in_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mWorkout Create (1.3ms)[0m  [1m[32mINSERT INTO "workouts" ("title", "time", "sport", "description", "distance", "exertion", "url", "isFavorite", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Workout 2"], ["time", 1.5], ["sport", "run"], ["description", "testing out the description"], ["distance", 2.0], ["exertion", 5], ["url", "https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s"], ["isFavorite", false], ["created_at", "2020-11-19 17:41:17.839485"], ["updated_at", "2020-11-19 17:41:17.839485"], ["user_id", 1]]
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (14.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+Completed 201 Created in 77ms (Views: 2.3ms | ActiveRecord: 16.6ms | Allocations: 3341)
+
+
+Started POST "/workouts/" for ::1 at 2020-11-19 12:41:24 -0500
+Processing by WorkoutsController#create as */*
+  Parameters: {"title"=>"Workout 3", "description"=>"testing out the description", "time"=>1.5, "sport"=>"run", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false, "workout"=>{"title"=>"Workout 3", "time"=>1.5, "sport"=>"run", "description"=>"testing out the description", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false}}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:28:in `logged_in_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (12.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mWorkout Create (4.2ms)[0m  [1m[32mINSERT INTO "workouts" ("title", "time", "sport", "description", "distance", "exertion", "url", "isFavorite", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Workout 3"], ["time", 1.5], ["sport", "run"], ["description", "testing out the description"], ["distance", 2.0], ["exertion", 5], ["url", "https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s"], ["isFavorite", false], ["created_at", "2020-11-19 17:41:24.621804"], ["updated_at", "2020-11-19 17:41:24.621804"], ["user_id", 1]]
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (23.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+Completed 201 Created in 93ms (Views: 2.1ms | ActiveRecord: 42.6ms | Allocations: 3343)
+
+
+Started POST "/workouts/" for ::1 at 2020-11-19 12:41:27 -0500
+Processing by WorkoutsController#create as */*
+  Parameters: {"title"=>"Workout 4", "description"=>"testing out the description", "time"=>1.5, "sport"=>"run", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false, "workout"=>{"title"=>"Workout 4", "time"=>1.5, "sport"=>"run", "description"=>"testing out the description", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:28:in `logged_in_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (18.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mWorkout Create (2.2ms)[0m  [1m[32mINSERT INTO "workouts" ("title", "time", "sport", "description", "distance", "exertion", "url", "isFavorite", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11) RETURNING "id"[0m  [["title", "Workout 4"], ["time", 1.5], ["sport", "run"], ["description", "testing out the description"], ["distance", 2.0], ["exertion", 5], ["url", "https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s"], ["isFavorite", false], ["created_at", "2020-11-19 17:41:27.857928"], ["updated_at", "2020-11-19 17:41:27.857928"], ["user_id", 1]]
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+Completed 201 Created in 58ms (Views: 1.1ms | ActiveRecord: 22.8ms | Allocations: 3317)
+
+
+Started PUT "/workouts/2" for ::1 at 2020-11-19 12:41:38 -0500
+Processing by WorkoutsController#update as */*
+  Parameters: {"title"=>"Workout 2.1", "description"=>"testing out the description", "time"=>1.5, "sport"=>"run", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false, "id"=>"2", "workout"=>{"title"=>"Workout 2.1", "time"=>1.5, "sport"=>"run", "description"=>"testing out the description", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false}}
+  [1m[36mWorkout Load (1.9ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:46:in `set_workout'
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:28:in `logged_in_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/workouts_controller.rb:31:in `update'
+  [1m[36mWorkout Update (5.8ms)[0m  [1m[33mUPDATE "workouts" SET "title" = $1, "updated_at" = $2 WHERE "workouts"."id" = $3[0m  [["title", "Workout 2.1"], ["updated_at", "2020-11-19 17:41:38.620363"], ["id", 2]]
+  ↳ app/controllers/workouts_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/workouts_controller.rb:31:in `update'
+Completed 200 OK in 77ms (Views: 0.5ms | ActiveRecord: 17.4ms | Allocations: 3985)
+
+
+Started PUT "/workouts/3" for ::1 at 2020-11-19 12:41:46 -0500
+Processing by WorkoutsController#update as */*
+  Parameters: {"title"=>"Workout 3.1", "description"=>"testing out the description", "time"=>1.5, "sport"=>"run", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false, "id"=>"3", "workout"=>{"title"=>"Workout 3.1", "time"=>1.5, "sport"=>"run", "description"=>"testing out the description", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false}}
+  [1m[36mWorkout Load (0.9ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:46:in `set_workout'
+  [1m[36mUser Load (8.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:28:in `logged_in_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (15.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/workouts_controller.rb:31:in `update'
+  [1m[36mWorkout Update (6.7ms)[0m  [1m[33mUPDATE "workouts" SET "title" = $1, "updated_at" = $2 WHERE "workouts"."id" = $3[0m  [["title", "Workout 3.1"], ["updated_at", "2020-11-19 17:41:46.567857"], ["id", 3]]
+  ↳ app/controllers/workouts_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/workouts_controller.rb:31:in `update'
+Completed 200 OK in 90ms (Views: 0.9ms | ActiveRecord: 32.3ms | Allocations: 3697)
+
+
+Started GET "/workouts" for ::1 at 2020-11-19 12:41:51 -0500
+Processing by WorkoutsController#index as */*
+  Parameters: {"title"=>"Workout 3.1", "description"=>"testing out the description", "time"=>1.5, "sport"=>"run", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false, "workout"=>{"title"=>"Workout 3.1", "time"=>1.5, "sport"=>"run", "description"=>"testing out the description", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:28:in `logged_in_user'
+  [1m[36mWorkout Load (0.9ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/workouts_controller.rb:9:in `index'
+Completed 200 OK in 57ms (Views: 28.1ms | ActiveRecord: 1.4ms | Allocations: 1913)
+
+
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (26.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6406944681107922840)[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+Migrating to AddUserIdToWorkouts (20201119171401)
+  [1m[36mTRANSACTION (12.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (11.2ms)[0m  [1m[35mALTER TABLE "workouts" DROP COLUMN "user_id"[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.0ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20201119171401"]]
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mTRANSACTION (25.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(6406944681107922840)[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (28.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (25.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6406944681107922840)[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+Migrating to CreateUsers (20201119163927)
+  [1m[36mTRANSACTION (13.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (9.7ms)[0m  [1m[35mDROP TABLE "users"[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mActiveRecord::SchemaMigration Destroy (1.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20201119163927"]]
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mTRANSACTION (35.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(6406944681107922840)[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (23.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6406944681107922840)[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+Migrating to CreateWorkouts (20201119161157)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (3.6ms)[0m  [1m[35mDROP TABLE "workouts"[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mActiveRecord::SchemaMigration Destroy (24.1ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = $1[0m  [["version", "20201119161157"]]
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6406944681107922840)[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6406944681107922840)[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+Migrating to CreateWorkouts (20201119161157)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (37.3ms)[0m  [1m[35mCREATE TABLE "workouts" ("id" bigserial primary key, "date" date, "title" character varying, "time" float, "sport" character varying, "description" text, "distance" float, "exertion" integer, "url" character varying, "isFavorite" boolean, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201119161157"]]
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mTRANSACTION (5.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ config/boot.rb:4:in `load'
+Migrating to CreateUsers (20201119163927)
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (32.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "username" character varying, "password_digest" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201119163927"]]
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ config/boot.rb:4:in `load'
+Migrating to AddUserIdToWorkouts (20201119171401)
+  [1m[36mTRANSACTION (11.9ms)[0m  [1m[35mBEGIN[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.8ms)[0m  [1m[35mALTER TABLE "workouts" ADD "user_id" integer[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mActiveRecord::SchemaMigration Create (1.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201119171401"]]
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mActiveRecord::InternalMetadata Load (3.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (22.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(6406944681107922840)[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(6406944681107922840)[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+Migrating to AddDateTypeToWorkouts (20201119180220)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (40.5ms)[0m  [1m[35mALTER TABLE "workouts" ALTER COLUMN "date" TYPE character varying[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mActiveRecord::SchemaMigration Create (16.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20201119180220"]]
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(6406944681107922840)[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+Started PUT "/workouts/1" for ::1 at 2020-11-19 13:04:52 -0500
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WorkoutsController#update as */*
+  Parameters: {"title"=>"Workout 3.1", "date"=>"11-19-20", "description"=>"testing out the description", "time"=>1.5, "sport"=>"run", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false, "id"=>"1", "workout"=>{"date"=>"11-19-20", "title"=>"Workout 3.1", "time"=>1.5, "sport"=>"run", "description"=>"testing out the description", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false}}
+  [1m[36mWorkout Load (1.7ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:46:in `set_workout'
+Completed 404 Not Found in 15ms (ActiveRecord: 10.4ms | Allocations: 791)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Workout with 'id'=1):
+  
+app/controllers/workouts_controller.rb:46:in `set_workout'
+Started GET "/workouts" for ::1 at 2020-11-19 13:05:15 -0500
+Processing by WorkoutsController#index as */*
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 115)
+
+
+Started POST "/login" for ::1 at 2020-11-19 13:06:43 -0500
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "user"=>{"username"=>"test"}}
+  [1m[36mUser Load (36.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 200 OK in 63ms (Views: 0.6ms | ActiveRecord: 36.5ms | Allocations: 654)
+
+
+Started POST "/login" for ::1 at 2020-11-19 13:06:52 -0500
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "user"=>{"username"=>"test"}}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 1.6ms | Allocations: 510)
+
+
+Started POST "/login" for ::1 at 2020-11-19 13:07:02 -0500
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "user"=>{"username"=>"test1"}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 200 OK in 33ms (Views: 0.3ms | ActiveRecord: 1.0ms | Allocations: 510)
+
+
+Started POST "/login" for ::1 at 2020-11-19 13:07:36 -0500
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"test", "password"=>"[FILTERED]", "user"=>{"username"=>"test"}}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 200 OK in 21ms (Views: 0.4ms | ActiveRecord: 5.2ms | Allocations: 4429)
+
+
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "test1"], ["password_digest", "$2a$12$PQGIH3kNF7ztehfvW0jKhOM7oDYykJfTY67pCOOdu4xRM2pyTAZ96"], ["created_at", "2020-11-19 18:09:03.467043"], ["updated_at", "2020-11-19 18:09:03.467043"]]
+  ↳ config/boot.rb:4:in `load'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ config/boot.rb:4:in `load'
+Started POST "/login" for ::1 at 2020-11-19 13:10:27 -0500
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"test1", "password"=>"[FILTERED]", "user"=>{"username"=>"test1"}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "test1"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:17:in `login'
+Completed 200 OK in 558ms (Views: 0.8ms | ActiveRecord: 19.7ms | Allocations: 7031)
+
+
+Started GET "/workouts" for ::1 at 2020-11-19 13:11:52 -0500
+Processing by WorkoutsController#index as */*
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:28:in `logged_in_user'
+  [1m[36mWorkout Load (1.5ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/workouts_controller.rb:9:in `index'
+Completed 200 OK in 69ms (Views: 12.7ms | ActiveRecord: 8.5ms | Allocations: 3162)
+
+
+Started POST "/workouts" for ::1 at 2020-11-19 13:12:33 -0500
+Processing by WorkoutsController#create as */*
+  Parameters: {"title"=>"Workout 1", "date"=>"11-19-20", "description"=>"testing out the description", "time"=>1.5, "sport"=>"run", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false, "workout"=>{"date"=>"11-19-20", "title"=>"Workout 1", "time"=>1.5, "sport"=>"run", "description"=>"testing out the description", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:28:in `logged_in_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (14.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mWorkout Create (1.7ms)[0m  [1m[32mINSERT INTO "workouts" ("date", "title", "time", "sport", "description", "distance", "exertion", "url", "isFavorite", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["date", "11-19-20"], ["title", "Workout 1"], ["time", 1.5], ["sport", "run"], ["description", "testing out the description"], ["distance", 2.0], ["exertion", 5], ["url", "https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s"], ["isFavorite", false], ["created_at", "2020-11-19 18:12:33.578935"], ["updated_at", "2020-11-19 18:12:33.578935"], ["user_id", 1]]
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+Completed 201 Created in 91ms (Views: 1.1ms | ActiveRecord: 48.4ms | Allocations: 10501)
+
+
+Started POST "/workouts" for ::1 at 2020-11-19 13:12:42 -0500
+Processing by WorkoutsController#create as */*
+  Parameters: {"title"=>"Workout 2", "date"=>"11-19-20", "description"=>"testing out the description", "time"=>1.5, "sport"=>"run", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false, "workout"=>{"date"=>"11-19-20", "title"=>"Workout 2", "time"=>1.5, "sport"=>"run", "description"=>"testing out the description", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:28:in `logged_in_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mWorkout Create (25.5ms)[0m  [1m[32mINSERT INTO "workouts" ("date", "title", "time", "sport", "description", "distance", "exertion", "url", "isFavorite", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["date", "11-19-20"], ["title", "Workout 2"], ["time", 1.5], ["sport", "run"], ["description", "testing out the description"], ["distance", 2.0], ["exertion", 5], ["url", "https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s"], ["isFavorite", false], ["created_at", "2020-11-19 18:12:42.466642"], ["updated_at", "2020-11-19 18:12:42.466642"], ["user_id", 1]]
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (17.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+Completed 201 Created in 84ms (Views: 0.7ms | ActiveRecord: 44.2ms | Allocations: 3364)
+
+
+Started POST "/workouts" for ::1 at 2020-11-19 13:12:45 -0500
+Processing by WorkoutsController#create as */*
+  Parameters: {"title"=>"Workout 3", "date"=>"11-19-20", "description"=>"testing out the description", "time"=>1.5, "sport"=>"run", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false, "workout"=>{"date"=>"11-19-20", "title"=>"Workout 3", "time"=>1.5, "sport"=>"run", "description"=>"testing out the description", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:28:in `logged_in_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mWorkout Create (11.0ms)[0m  [1m[32mINSERT INTO "workouts" ("date", "title", "time", "sport", "description", "distance", "exertion", "url", "isFavorite", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["date", "11-19-20"], ["title", "Workout 3"], ["time", 1.5], ["sport", "run"], ["description", "testing out the description"], ["distance", 2.0], ["exertion", 5], ["url", "https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s"], ["isFavorite", false], ["created_at", "2020-11-19 18:12:45.562370"], ["updated_at", "2020-11-19 18:12:45.562370"], ["user_id", 1]]
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+Completed 201 Created in 65ms (Views: 0.9ms | ActiveRecord: 18.5ms | Allocations: 3342)
+
+
+Started POST "/workouts" for ::1 at 2020-11-19 13:12:48 -0500
+Processing by WorkoutsController#create as */*
+  Parameters: {"title"=>"Workout 4", "date"=>"11-19-20", "description"=>"testing out the description", "time"=>1.5, "sport"=>"run", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false, "workout"=>{"date"=>"11-19-20", "title"=>"Workout 4", "time"=>1.5, "sport"=>"run", "description"=>"testing out the description", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:28:in `logged_in_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mWorkout Create (25.5ms)[0m  [1m[32mINSERT INTO "workouts" ("date", "title", "time", "sport", "description", "distance", "exertion", "url", "isFavorite", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["date", "11-19-20"], ["title", "Workout 4"], ["time", 1.5], ["sport", "run"], ["description", "testing out the description"], ["distance", 2.0], ["exertion", 5], ["url", "https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s"], ["isFavorite", false], ["created_at", "2020-11-19 18:12:48.968170"], ["updated_at", "2020-11-19 18:12:48.968170"], ["user_id", 1]]
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/workouts_controller.rb:22:in `create'
+Completed 201 Created in 58ms (Views: 0.6ms | ActiveRecord: 27.4ms | Allocations: 3364)
+
+
+Started PUT "/workouts/4" for ::1 at 2020-11-19 13:13:17 -0500
+Processing by WorkoutsController#update as */*
+  Parameters: {"title"=>"Workout 4.1", "date"=>"11-19-20", "description"=>"testing out the description", "time"=>1.5, "sport"=>"run", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false, "id"=>"4", "workout"=>{"date"=>"11-19-20", "title"=>"Workout 4.1", "time"=>1.5, "sport"=>"run", "description"=>"testing out the description", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false}}
+  [1m[36mWorkout Load (0.5ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:46:in `set_workout'
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:28:in `logged_in_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (7.0ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/workouts_controller.rb:31:in `update'
+  [1m[36mWorkout Update (15.3ms)[0m  [1m[33mUPDATE "workouts" SET "title" = $1, "updated_at" = $2 WHERE "workouts"."id" = $3[0m  [["title", "Workout 4.1"], ["updated_at", "2020-11-19 18:13:17.236637"], ["id", 4]]
+  ↳ app/controllers/workouts_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/workouts_controller.rb:31:in `update'
+Completed 200 OK in 116ms (Views: 0.3ms | ActiveRecord: 23.8ms | Allocations: 3854)
+
+
+Started PUT "/workouts/3" for ::1 at 2020-11-19 13:13:29 -0500
+Processing by WorkoutsController#update as */*
+  Parameters: {"title"=>"Workout 3.1", "date"=>"11-19-20", "description"=>"testing out the description", "time"=>1.5, "sport"=>"run", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false, "id"=>"3", "workout"=>{"date"=>"11-19-20", "title"=>"Workout 3.1", "time"=>1.5, "sport"=>"run", "description"=>"testing out the description", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false}}
+  [1m[36mWorkout Load (0.4ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:46:in `set_workout'
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:28:in `logged_in_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/workouts_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (9.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/workouts_controller.rb:31:in `update'
+  [1m[36mWorkout Update (0.8ms)[0m  [1m[33mUPDATE "workouts" SET "title" = $1, "updated_at" = $2 WHERE "workouts"."id" = $3[0m  [["title", "Workout 3.1"], ["updated_at", "2020-11-19 18:13:29.384415"], ["id", 3]]
+  ↳ app/controllers/workouts_controller.rb:31:in `update'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/workouts_controller.rb:31:in `update'
+Completed 200 OK in 73ms (Views: 0.5ms | ActiveRecord: 12.3ms | Allocations: 3707)
+
+
+Started GET "/workouts" for ::1 at 2020-11-19 13:13:33 -0500
+Processing by WorkoutsController#index as */*
+  Parameters: {"title"=>"Workout 3.1", "date"=>"11-19-20", "description"=>"testing out the description", "time"=>1.5, "sport"=>"run", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false, "workout"=>{"date"=>"11-19-20", "title"=>"Workout 3.1", "time"=>1.5, "sport"=>"run", "description"=>"testing out the description", "distance"=>2.0, "exertion"=>5, "url"=>"https://www.youtube.com/watch?v=TyqHraoVSDA&t=299s", "isFavorite"=>false}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:28:in `logged_in_user'
+  [1m[36mWorkout Load (0.5ms)[0m  [1m[34mSELECT "workouts".* FROM "workouts" WHERE "workouts"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/controllers/workouts_controller.rb:9:in `index'
+Completed 200 OK in 29ms (Views: 22.8ms | ActiveRecord: 0.9ms | Allocations: 1933)
+
+
