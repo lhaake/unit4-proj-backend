@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2020-11-19
+  title: MyString
+  time: 1.5
+  sport: MyString
+  description: MyText
+  distance: 1.5
+  exertion: 1
+  url: MyString
+  isFavorite: false
+
+two:
+  date: 2020-11-19
+  title: MyString
+  time: 1.5
+  sport: MyString
+  description: MyText
+  distance: 1.5
+  exertion: 1
+  url: MyString
+  isFavorite: false

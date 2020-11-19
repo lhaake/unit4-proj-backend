@@ -20,6 +20,10 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  host: localhost
+  port: 5432
+  user: test
+  password: test
 
 development:
   <<: *default
@@ -81,6 +85,4 @@ test:
 #
 production:
   <<: *default
-  database: training_log_app_backend_production
-  username: training_log_app_backend
-  password: <%= ENV['TRAINING_LOG_APP_BACKEND_DATABASE_PASSWORD'] %>
+  url: <%= ENV['MY_APP_DATABASE_URL'] %>
