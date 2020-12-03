@@ -722,3 +722,381 @@ Processing by WorkoutsController#index as */*
 Completed 200 OK in 29ms (Views: 22.8ms | ActiveRecord: 0.9ms | Allocations: 1933)
 
 
+Started GET "/" for ::1 at 2020-11-20 15:01:36 -0500
+  [1m[35m (4.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering vendor/bundle/ruby/2.7.0/gems/railties-6.1.0.rc1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered vendor/bundle/ruby/2.7.0/gems/railties-6.1.0.rc1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 12.5ms | Allocations: 346)
+Completed 200 OK in 37ms (Views: 20.7ms | ActiveRecord: 0.0ms | Allocations: 2705)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-11-20 15:01:37 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/users" for ::1 at 2020-11-20 15:03:25 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for ::1 at 2020-11-20 15:04:22 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started DELETE "/users/3" for ::1 at 2020-11-20 15:06:09 -0500
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [DELETE] "/users/3"):
+  
+Started GET "/users" for ::1 at 2020-11-20 15:08:22 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for ::1 at 2020-11-20 15:09:08 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/auto_login" for ::1 at 2020-11-20 15:09:17 -0500
+  
+AbstractController::ActionNotFound (The action 'auto_login' could not be found for UsersController
+Did you mean?  authorized
+               logged_in?
+               auth_header
+               encode_token):
+  
+actionpack (6.1.0.rc1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.0.rc1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.0.rc1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.0.rc1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.0.rc1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.0.rc1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.0.rc1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.0.rc1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.0.rc1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.0.rc1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.0.rc1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.0.rc1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.0.rc1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.0.rc1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.0.rc1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.0.rc1) lib/rails/engine.rb:535:in `call'
+puma (5.0.4) lib/puma/configuration.rb:239:in `call'
+puma (5.0.4) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.0.4) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.0.4) lib/puma/request.rb:75:in `handle_request'
+puma (5.0.4) lib/puma/server.rb:430:in `process_client'
+puma (5.0.4) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2020-11-20 15:10:22 -0500
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController
+Did you mean?  authorized
+               destroy
+               logged_in?
+               auth_header):
+  
+actionpack (6.1.0.rc1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.0.rc1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.0.rc1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.0.rc1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.0.rc1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.0.rc1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.0.rc1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.0.rc1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.0.rc1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.0.rc1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.0.rc1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.0.rc1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.0.rc1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.0.rc1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.0.rc1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.0.rc1) lib/rails/engine.rb:535:in `call'
+puma (5.0.4) lib/puma/configuration.rb:239:in `call'
+puma (5.0.4) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.0.4) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.0.4) lib/puma/request.rb:75:in `handle_request'
+puma (5.0.4) lib/puma/server.rb:430:in `process_client'
+puma (5.0.4) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started DELETE "/users/3" for ::1 at 2020-11-20 15:11:08 -0500
+  
+ActionController::RoutingError (No route matches [DELETE] "/users/3"):
+  
+Started GET "/users" for ::1 at 2020-11-20 15:12:12 -0500
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+AbstractController::ActionNotFound (The action 'show' could not be found for UsersController
+Did you mean?  authorized
+               destroy
+               logged_in?
+               auth_header):
+  
+actionpack (6.1.0.rc1) lib/abstract_controller/base.rb:160:in `process'
+actionpack (6.1.0.rc1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.0.rc1) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.0.rc1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.0.rc1) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.0.rc1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.0.rc1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.0.rc1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.0.rc1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.0.rc1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.0.rc1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.0.rc1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.0.rc1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.0.rc1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.0.rc1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.0.rc1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.0.rc1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.0.rc1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.0.rc1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.0.rc1) lib/rails/engine.rb:535:in `call'
+puma (5.0.4) lib/puma/configuration.rb:239:in `call'
+puma (5.0.4) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.0.4) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.0.4) lib/puma/request.rb:75:in `handle_request'
+puma (5.0.4) lib/puma/server.rb:430:in `process_client'
+puma (5.0.4) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/" for ::1 at 2020-12-03 14:57:16 -0500
+  [1m[35m (7.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering vendor/bundle/ruby/2.7.0/gems/railties-6.1.0.rc1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered vendor/bundle/ruby/2.7.0/gems/railties-6.1.0.rc1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.8ms | Allocations: 346)
+Completed 200 OK in 34ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 2705)
+
+
+Started GET "/favicon.ico" for ::1 at 2020-12-03 14:57:17 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/users" for ::1 at 2020-12-03 14:57:21 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/auto_login" for ::1 at 2020-12-03 14:57:34 -0500
+Processing by UsersController#auto_login as HTML
+Filter chain halted as :authorized rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 177)
+
+
+Started GET "/users" for ::1 at 2020-12-03 14:57:39 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started POST "/users" for ::1 at 2020-12-03 15:04:03 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"orange", "password"=>"[FILTERED]", "user"=>{"username"=>"orange"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[36mTRANSACTION (10.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (12.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "orange"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (16.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", "orange"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 374ms (ActiveRecord: 91.0ms | Allocations: 5893)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column users.password does not exist
+LINE 1: SELECT 1 AS one FROM "users" WHERE "users"."password" = $1 L...
+                                           ^
+):
+  
+app/controllers/users_controller.rb:7:in `create'
+Started POST "/users" for ::1 at 2020-12-03 15:05:31 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"orange3", "password"=>"[FILTERED]", "user"=>{"username"=>"orange3"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "orange3"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."password" = $1 LIMIT $2[0m  [["password", "orange3"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 273ms (ActiveRecord: 1.7ms | Allocations: 2689)
+
+
+  
+ActiveRecord::StatementInvalid (PG::UndefinedColumn: ERROR:  column users.password does not exist
+LINE 1: SELECT 1 AS one FROM "users" WHERE "users"."password" = $1 L...
+                                           ^
+):
+  
+app/controllers/users_controller.rb:7:in `create'
+Started POST "/users" for ::1 at 2020-12-03 15:06:48 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"orange3", "password"=>"[FILTERED]", "user"=>{"username"=>"orange3"}}
+[31mUnpermitted parameter: :user[0m
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 7.2ms | Allocations: 2042)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password' for User.):
+  
+app/controllers/users_controller.rb:7:in `create'
+Started POST "/users" for ::1 at 2020-12-03 15:07:49 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"orange3", "password"=>"[FILTERED]", "user"=>{"username"=>"orange3"}}
+[31mUnpermitted parameter: :user[0m
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 6.4ms | Allocations: 2021)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'password' for User.):
+  
+app/controllers/users_controller.rb:7:in `create'
+Started POST "/users" for ::1 at 2020-12-03 15:08:33 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"orange3", "password"=>"[FILTERED]", "user"=>{"username"=>"orange3"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[36mTRANSACTION (3.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "orange3"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (20.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "orange3"], ["password_digest", "$2a$12$yTR2zkd.cB0HLaCMNhrnS.gXXHW1T5Krjx2ryo2Ug22jVfcYsVkge"], ["created_at", "2020-12-03 20:08:33.935549"], ["updated_at", "2020-12-03 20:08:33.935549"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "orange3"], ["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Completed 200 OK in 312ms (Views: 0.3ms | ActiveRecord: 35.1ms | Allocations: 5308)
+
+
+Started POST "/users" for ::1 at 2020-12-03 15:08:46 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"orange", "password"=>"[FILTERED]", "user"=>{"username"=>"orange"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "orange"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (1.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "orange"], ["password_digest", "$2a$12$2Xija1s/B.8Io0FHvrs0wOGXI7xrAvuFRKaId9df3ugVnjierpUIW"], ["created_at", "2020-12-03 20:08:46.948766"], ["updated_at", "2020-12-03 20:08:46.948766"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "orange"], ["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Completed 200 OK in 292ms (Views: 0.3ms | ActiveRecord: 3.3ms | Allocations: 3314)
+
+
+Started POST "/users" for ::1 at 2020-12-03 15:09:20 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"orange2", "password"=>"[FILTERED]", "user"=>{"username"=>"orange2"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "orange2"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "orange2"], ["password_digest", "$2a$12$r.BVT/jcVIGn5UdDoj1udOl4Gqp24pq1Vp6FAZKAb3iUaftg3Dv1."], ["created_at", "2020-12-03 20:09:20.945368"], ["updated_at", "2020-12-03 20:09:20.945368"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (11.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "orange2"], ["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Completed 200 OK in 325ms (Views: 0.3ms | ActiveRecord: 17.9ms | Allocations: 3312)
+
+
+Started POST "/users" for ::1 at 2020-12-03 15:09:41 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"orange", "password"=>"[FILTERED]", "user"=>{"username"=>"orange"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "orange"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "orange"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Completed 200 OK in 295ms (Views: 0.2ms | ActiveRecord: 2.0ms | Allocations: 2644)
+
+
+Started POST "/users" for ::1 at 2020-12-03 15:09:57 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"orange1", "password"=>"[FILTERED]", "user"=>{"username"=>"orange1"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "orange1"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["username", "orange1"], ["password_digest", "$2a$12$MUzx1htg7U4kdcYs4Z1CWOpLxakeKW4nJ6CjJK8SPCHricrzQT9c6"], ["created_at", "2020-12-03 20:09:57.310215"], ["updated_at", "2020-12-03 20:09:57.310215"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 AND "users"."id" != $2 LIMIT $3[0m  [["username", "orange1"], ["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Completed 200 OK in 315ms (Views: 0.5ms | ActiveRecord: 7.1ms | Allocations: 3320)
+
+
+Started POST "/users" for ::1 at 2020-12-03 15:10:02 -0500
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"orange2", "password"=>"[FILTERED]", "user"=>{"username"=>"orange2"}}
+[31mUnpermitted parameter: :user[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "orange2"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = $1 LIMIT $2[0m  [["username", "orange2"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:8:in `create'
+Completed 200 OK in 295ms (Views: 0.2ms | ActiveRecord: 1.9ms | Allocations: 2644)
+
+
